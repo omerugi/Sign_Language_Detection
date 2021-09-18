@@ -31,6 +31,8 @@ Credit: https://analyticsvidhya.com
 We used the same learning rate, optimizer function and loss function, with additional two hidden layers - each of them with 512 neurons, and between the layers we used the relu function as the activation function.
 
 ### CNN (Convolution Neural Network)
+![image](https://user-images.githubusercontent.com/57361655/133886429-9af5aa2e-b301-4564-8fa7-f39299f7441a.png)
+
 In our CNN we have 3 hidden convolution layers: in each of the layers we did batch normalization, and between every two layers we did maxpool.  The first layer contains 75 kernels in size 3X3, the second layer contains 50 kernels in size 3X3, with dropout of 20 percent, and the third one contains 25 kernels in size of 3X3.
 After the last maxpool, we flattened the matrix we got from the CNN part to get a hidden layer with 400 neurons. 
 From this layer we used the relu function to get 
